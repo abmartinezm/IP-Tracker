@@ -1,0 +1,28 @@
+
+.App-footer{
+    width: 100%;
+    height: 600px;
+}
+
+.map-container{
+    width: 100%;
+    /* margin-top: 50px; */
+    height: 100%;
+    
+}
+
+/* #map {
+    z-index:1;
+     height: 180px; } */
+.full-height-map {
+    width: 100%;
+    z-index:1;
+    height: 100%;
+}
+
+@media screen and (min-width: 700px){
+    .App-footer{
+        width: 100%;
+        height: 515px;
+    }
+}

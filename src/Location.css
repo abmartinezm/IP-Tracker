@@ -1,0 +1,112 @@
+
+:root{
+
+    --Very-Dark-Gray: hsl(0, 0%, 17%);
+    --Dark-Gray: hsl(0, 0%, 59%);
+}
+
+.App-main{
+    position: inherit;
+}
+
+
+.location-container{
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius:20px;
+    position: absolute;
+    top: 180px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    
+}
+
+.ip-address, .location-details, .timezone-details, .isp-details{
+    width: 100%;
+}
+
+.ip-title, .location, .timezone, .isp{
+    /* width: 100%; */
+    font-size: 11px;
+    color: var(--Dark-Gray);
+    font-weight: 700;
+}
+
+.address-number, .address, .timezone-format, .company{
+    font-size:15px;
+    color: var(--Very-Dark-Gray);
+    font-weight: 700;
+    
+}
+
+.location-information{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    height: 90%;
+    padding:5%;
+}
+
+
+@media screen and (min-width: 700px) {
+    .location-container{
+        width:1000px;
+        height: 170px;
+        top: 260px;    
+    }
+
+    .location-information{
+        width: 100%;
+        padding: 0;
+        height: 100%;
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:space-between;
+    }
+
+    .ip-address, .location-details, .timezone-details {
+        position: relative;
+        border-right:1.8px solid #ccc;
+        height: 80px;
+      }
+
+      .isp-details{
+        height: 80px;
+      }
+      
+      
+      /* Main div for border to extend to 50% from bottom left corner */
+      
+      /* .ip-address:after {
+        content: "";
+        background: black;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 85%;
+        width: 1px;
+      } */
+    
+      .ip-title, .location, .timezone, .isp{
+        /* width: 100%; */
+        text-align: left;
+        padding-left: 40px;
+        margin-top: -2px;
+        background-color: transparent;
+    }
+
+    .address-number, .address, .timezone-format, .company{
+        text-align: left;
+        padding-left: 40px;
+        
+    }
+}
